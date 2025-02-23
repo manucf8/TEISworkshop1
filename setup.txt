@@ -1,0 +1,21 @@
+** Requirements **
+
+| Software          | Version                  |
+|-------------------|--------------------------|
+| PHP               | 8.2.12                   |
+| Zend Engine       | 4.2.12                   |
+| XAMPP ControlPanel| 3.3.0                    |
+| MySQL/MariaDB     | Ver 15.1 Distrib 10.4.32 |
+| Apache Server     | 2.4.58                   |
+
+
+** Instructions **
+
+1. Run the migrations to create the database and tables. Run this command in the project directory:
+    php artisan migrate
+
+
+2. Then, run the following command in the project directory:
+    php artisan serve
+
+3. Open in a browser the URL displayed in the terminal.
