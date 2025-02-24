@@ -23,10 +23,10 @@
         </tr> 
       </thead> 
       <tbody> 
-        @foreach ($viewData["objects"] as $object) 
+        @foreach ($viewData["categories"] as $category) 
         <tr> 
-        <td><a class="nav-link active" href="{{ route('object.show', ['id'=> $object->getId()]) }}">{{ $object->getId() }}</a></td>  
-          <td>{{ $object->getName() }}</td>  
+        <td><a class="nav-link active" href="{{ route('category.show', ['id'=> $category->getId()]) }}">{{ $category->getId() }}</a></td>  
+          <td>{{ $category->getName() }}</td>  
         </tr> 
         @endforeach 
         </tbody> 

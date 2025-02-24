@@ -15,7 +15,7 @@
     </ul> 
     @endif 
     <p class="text-muted">Both the Name and Description fields are required to create a category.</p>
-    <form method="POST" action="{{ route('object.store')  }}" enctype="multipart/form-data"> 
+    <form method="POST" action="{{ route('category.store')  }}" enctype="multipart/form-data"> 
 
       @csrf 
       <div class="row"> 

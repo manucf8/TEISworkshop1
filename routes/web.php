@@ -4,10 +4,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'App\Http\Controllers\HomeController@index')->name('home.index');
 
-Route::controller(App\Http\Controllers\ObjectController::class)->group(function () {
-    Route::get('/objects', 'index')->name('object.index');
-    Route::get('/objects/create', 'create')->name('object.create');
-    Route::get('/objects/{id}', 'show')->name('object.show');
-    Route::post('/objects/store', 'store')->name('object.store');
-    Route::delete('/objects/{id}/delete', 'delete')->name('object.delete');
+Route::controller(App\Http\Controllers\CategoryController::class)->group(function () {
+    Route::get('/categories', 'index')->name('category.index');
+    Route::get('/categories/create', 'create')->name('category.create');
+    Route::get('/categories/{id}', 'show')->name('category.show');
+    Route::post('/categories/store', 'store')->name('category.store');
+    Route::delete('/categories/{id}/delete', 'delete')->name('category.delete');
 });

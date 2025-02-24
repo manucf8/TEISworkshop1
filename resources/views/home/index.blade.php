@@ -5,8 +5,8 @@
 <div class="col-md-6 "> 
 <h3>Welcome to the home page.</h3>
 <p>
-    <a href="{{ route('object.create') }}" class="text-primary">Create</a> a category or see the 
-    <a href="{{ route('object.index') }}" class="text-primary">List</a> of all categories in the database.
+    <a href="{{ route('category.create') }}" class="text-primary">Create</a> a category or see the 
+    <a href="{{ route('category.index') }}" class="text-primary">List</a> of all categories in the database.
 </p>
 
 </div> 

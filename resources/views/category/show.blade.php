@@ -8,14 +8,14 @@
     <div class="col-md-8"> 
       <div class="card-body"> 
         <h3 class="card-title"> 
-        {{ $viewData["object"]->getName() }}
+        {{ $viewData["category"]->getName() }}
         </h3> 
-        <p class="card-text"><i>ID:</i> {{ $viewData["object"]->getId() }}</p>
-        <p class="card-text"><i>Description:</i> {{ $viewData["object"]->getDescription() }}</p>
-        <p class="card-text"><i>Created at:</i> {{ $viewData["object"]->getCreatedAt() }}</p>
-        <p class="card-text"><i>Updated at:</i> {{ $viewData["object"]->getUpdatedAt() }}</p>
+        <p class="card-text"><i>ID:</i> {{ $viewData["category"]->getId() }}</p>
+        <p class="card-text"><i>Description:</i> {{ $viewData["category"]->getDescription() }}</p>
+        <p class="card-text"><i>Created at:</i> {{ $viewData["category"]->getCreatedAt() }}</p>
+        <p class="card-text"><i>Updated at:</i> {{ $viewData["category"]->getUpdatedAt() }}</p>
         
-        <form action="{{ route('object.delete', [$viewData["object"]->getId()]) }}" method="POST"> 
+        <form action="{{ route('category.delete', [$viewData["category"]->getId()]) }}" method="POST"> 
               @csrf 
               @method('DELETE') 
             <button class="btn btn-danger">Delete</button> 
