@@ -12,6 +12,9 @@
     List of all categories 
   </div> 
   <div class="card-body"> 
+    <div class="card-subtitle">
+      Click on a specific ID to get more information about that category.
+    </div>
     <table class="table table-bordered table-striped"> 
       <thead> 
         <tr> 

@@ -2,17 +2,18 @@
 @section('title', $viewData["title"]) 
 @section('subtitle', $viewData["subtitle"]) 
 @section('content') 
+<p>Below is the complete information of this category.</p>
 <div class="card mb-3">
 <div class="row g-0"> 
     <div class="col-md-8"> 
       <div class="card-body"> 
-        <h5 class="card-title"> 
+        <h3 class="card-title"> 
         {{ $viewData["object"]->getName() }}
-        </h5> 
-        <h6 class="card-subtitle">ID: {{ $viewData["object"]->getId() }} </h6>
-        <p class="card-text">{{ $viewData["object"]->getDescription() }}</p>
-        <p class="card-text">Created at: {{ $viewData["object"]->getCreatedAt() }}</p>
-        <p class="card-text">Updated at: {{ $viewData["object"]->getUpdatedAt() }}</p>
+        </h3> 
+        <p class="card-text"><i>ID:</i> {{ $viewData["object"]->getId() }}</p>
+        <p class="card-text"><i>Description:</i> {{ $viewData["object"]->getDescription() }}</p>
+        <p class="card-text"><i>Created at:</i> {{ $viewData["object"]->getCreatedAt() }}</p>
+        <p class="card-text"><i>Updated at:</i> {{ $viewData["object"]->getUpdatedAt() }}</p>
         
         <form action="{{ route('object.delete', [$viewData["object"]->getId()]) }}" method="POST"> 
               @csrf 

@@ -11,11 +11,16 @@
 
 ** Instructions **
 
-1. Run the migrations to create the database and tables. Run this command in the project directory:
+1. Clone this repository to your local machine.
+2. Navigate to the project directory in your terminal.
+3. Run this command to install PHP dependencies:
+    composer install
+4. Copy the .env.example file to a new .env file and configure your environment variables (like database credentials) using this command:
+    cp .env.example .env
+5. Run this command in the project directory to generate a new application key:
+    php artisan key:generate
+6. Run this command in the project directory to create the database and tables:
     php artisan migrate
-
-
-2. Then, run the following command in the project directory:
+7. Run the following command in the project directory to run the app:
     php artisan serve
-
-3. Open in a browser the URL displayed in the terminal.
+8. Finally, open in a browser the URL displayed in the terminal (localhost).

@@ -22,7 +22,7 @@ target="#navbarNavAltMarkup"
         <div class="navbar-nav ms-auto"> 
           <a class="nav-link active" href="{{ route('home.index') }}">Home</a> 
           <a class="nav-link active" href="{{ route('object.create') }}">Create</a>
-          <a class="nav-link active" href="{{ route('object.index') }}">All Objects</a>
+          <a class="nav-link active" href="{{ route('object.index') }}">All Categories</a>
           <div class="vr bg-white mx-2 d-none d-lg-block"></div> 
         
         </div> 

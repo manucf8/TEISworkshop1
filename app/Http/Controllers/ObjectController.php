@@ -20,7 +20,7 @@ class ObjectController extends Controller
     public function create()
     {
         $viewData = [];
-        $viewData['title'] = 'Objects';
+        $viewData['title'] = 'Category';
         $viewData['subtitle'] = 'Form';
 
         return view('object.create')->with('viewData', $viewData);
@@ -36,7 +36,7 @@ class ObjectController extends Controller
 
         $newCustomObject->save();
 
-        return redirect()->route('object.index')->with('success', 'Object created successfully!');
+        return redirect()->route('object.index')->with('success', 'Category created successfully!');
 
     }
 
@@ -55,6 +55,6 @@ class ObjectController extends Controller
     {
         CustomObject::destroy($id);
 
-        return redirect()->route('object.index')->with('success', 'Object deleted successfully!');
+        return redirect()->route('object.index')->with('success', 'Category deleted successfully!');
     }
 }

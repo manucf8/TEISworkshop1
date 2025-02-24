@@ -4,7 +4,7 @@
 @section('content') 
 <div class="card mb-4"> 
   <div class="card-header"> 
-    Create Category 
+    Create a Category 
   </div> 
   <div class="card-body"> 
     @if($errors->any()) 
@@ -14,7 +14,7 @@
       @endforeach 
     </ul> 
     @endif 
- 
+    <p class="text-muted">Both the Name and Description fields are required to create a category.</p>
     <form method="POST" action="{{ route('object.store')  }}" enctype="multipart/form-data"> 
 
       @csrf 
@@ -33,7 +33,7 @@
         <label class="form-label">Description</label> 
         <textarea class="form-control" name="description" rows="3">{{ old('description') }}</textarea> 
       </div> 
-      <button type="submit" class="btn btn-primary">Submit</button> 
+      <button type="submit" class="btn btn-primary">Create</button> 
     </form> 
   </div> 
 </div> 

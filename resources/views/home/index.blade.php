@@ -2,13 +2,12 @@
 @section('title', $viewData["title"]) 
 @section('content') 
 <div class="row"> 
-<div class="col-md-6 col-lg-4 mb-2"> 
-<p class="h3">Categories</p>
-</div> 
-<div class="col-md-6 col-lg-4 mb-2"> 
-
-</div> 
-<div class="col-md-6 col-lg-4 mb-2"> 
+<div class="col-md-6 "> 
+<h3>Welcome to the home page.</h3>
+<p>
+    <a href="{{ route('object.create') }}" class="text-primary">Create</a> a category or see the 
+    <a href="{{ route('object.index') }}" class="text-primary">List</a> of all categories in the database.
+</p>
 
 </div> 
 </div> 
